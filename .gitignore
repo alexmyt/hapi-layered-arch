@@ -1,6 +1,7 @@
 node_modules
 dist
-database
 coverage
 .env*
 !.env*.example
+database
+!src/database/
