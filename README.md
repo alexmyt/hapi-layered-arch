@@ -54,3 +54,9 @@
 - `npm t` - запуск unit тестов
 - `npm run test:e2e`- запуск end-to-end тестов
 - `npm run typeorm`- запуск команд TypeOrm
+
+## Методы API
+`POST /users/register` - регистрация пользователя. Нагрузка: {name: string, email: string, password: string}
+`POST /users/login` - аутентификация пользователя. Нагрузка: {email: string, password: string}
+`GET /users/:id` - информация о пользователе. Аутентификация - "Bearer accessToken" в заголовке запроса Authorization
+`POST /auth/token` - обновление токена. Нагрузка: {refreshToken: string}
